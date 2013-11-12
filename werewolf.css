@@ -10,24 +10,26 @@
   top: 0.5%; left: 0;
   opacity: 0.9;
 }
-
-#werewolf FORM {
-  text-align: center;
+#werewolf .qrcode,
+#werewolf .breed {
+  width: 100%;
 }
-
 #werewolf HR.cut,
 #werewolf IMG.cut {
   display: none;
 }
+#werewolf FORM {
+  text-align: center;
+}
+#werewolf .card {
+  margin-bottom: 20px;
+}
 
 @media print {
-
+  #container { width: 95%; }
   #container #plugin-title { display: none; }
   #werewolf P.info { display: none; }
-  #container  .span9 { width: 95%; padding-top: 18px; }
-  #sidebar    { display: none; }
-  .navbar     { display: none; }
-  FOOTER      { display: none; }
+  #werewolf .card { margin-bottom: -10px; }
   
   #werewolf  DIV.split {
     position: relative;
